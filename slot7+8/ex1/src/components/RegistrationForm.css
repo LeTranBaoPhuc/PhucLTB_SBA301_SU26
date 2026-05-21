@@ -1,0 +1,113 @@
+/* RegistrationForm.css */
+
+/* Căn giữa form trên màn hình và tạo nền gradient nhẹ nhàng */
+.form-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Khối card bọc ngoài form */
+.form-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Tiêu đề chính */
+.form-title {
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* Nhãn của các trường input */
+.form-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #5a738e;
+    margin-bottom: 8px;
+}
+
+/* Tùy chỉnh các ô Input */
+.form-control {
+    border-radius: 8px !important;
+    padding: 12px 16px !important;
+    border: 1.5px solid #e2e8f0 !important;
+    font-size: 0.95rem !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+/* Hiệu ứng khi click vào ô nhập liệu (Focus) */
+.form-control:focus {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15) !important;
+}
+
+/* Trạng thái lỗi */
+.form-control.is-invalid {
+    border-color: #ef4444 !important;
+    background-image: none !important;
+    /* Bỏ icon warning mặc định của bootstrap cho sạch */
+}
+
+.form-control.is-invalid:focus {
+    box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.15) !important;
+}
+
+/* Text hiển thị thông báo lỗi */
+.invalid-feedback {
+    font-size: 0.8rem !important;
+    font-weight: 500;
+    color: #ef4444 !important;
+    margin-top: 6px !important;
+}
+
+/* Khối bọc các button */
+.button-group {
+    margin-top: 30px;
+}
+
+/* CSS chung cho Buttons */
+.custom-btn {
+    padding: 12px !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+    transition: all 0.2s ease !important;
+    border: none !important;
+}
+
+/* Button Đăng ký */
+.btn-submit {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%) !important;
+    color: white !important;
+}
+
+.btn-submit:hover {
+    background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(29, 78, 216, 0.3);
+}
+
+/* Button Hủy */
+.btn-cancel {
+    background-color: #f1f5f9 !important;
+    color: #64748b !important;
+}
+
+.btn-cancel:hover {
+    background-color: #e2e8f0 !important;
+    color: #475569 !important;
+}
